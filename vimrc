@@ -98,8 +98,8 @@ nnoremap k gk
 "unhighlight search
 nnoremap <esc><esc> :noh<return>
 
-"Enable folding with the spacebar
-nnoremap <space> za
+"Folding shortcut
+nnoremap ya za
 
 "show Nerdtree
 nnoremap <Leader>f :NERDTreeToggle<Enter>
