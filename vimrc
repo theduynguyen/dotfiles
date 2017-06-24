@@ -36,6 +36,7 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
 Plugin 'jreybert/vimagit'
 Plugin 'gabrielelana/vim-markdown'
+Plugin 'unblevable/quick-scope'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -122,6 +123,8 @@ let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 let NERDTreeAutoDeleteBuffer = 1
 
+" Trigger a highlight in the appropriate direction when pressing these keys:
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 
 " change colorscheme
 if filereadable( expand("$HOME/.vim/bundle/molokai/colors/molokai.vim") )
