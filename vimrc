@@ -122,6 +122,8 @@ let python_highlight_all=1
 " ROS launch files
 au BufReadPost *.launch set syntax=xml
 
+" Trigger a highlight in the appropriate direction when pressing these keys:
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 
 " change colorscheme
 if filereadable( expand("$HOME/.vim/bundle/molokai/colors/molokai.vim") )
