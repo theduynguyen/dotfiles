@@ -13,23 +13,30 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
+"Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'tmhedberg/SimpylFold'
-Plugin 'vim-scripts/indentpython.vim'
-"Plugin 'scrooloose/syntastic'
-Plugin 'nvie/vim-flake8'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'bling/vim-bufferline'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'kien/ctrlp.vim'
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-Plugin 'davidhalter/jedi-vim'
 Plugin 'tomasr/molokai'
+Plugin 'jeffkreeftmeijer/vim-numbertoggle'
+Plugin 'jreybert/vimagit'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+
 Plugin 'tpope/vim-surround'
 Plugin 'ervandew/supertab'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'jeffkreeftmeijer/vim-numbertoggle'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
+
+"Plugin 'scrooloose/syntastic'
+Plugin 'vim-scripts/indentpython.vim'
+Plugin 'nvie/vim-flake8'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'cjrh/vim-conda'
+
 Plugin 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
-Plugin 'jreybert/vimagit'
 Plugin 'gabrielelana/vim-markdown'
 Plugin 'othree/xml.vim'
 
@@ -72,8 +79,12 @@ set wildmenu
 set autoindent
 set smartindent
 
-" Powerline - Always show statusline
+" Airline - Always show statusline
 set laststatus=2
+let g:airline_theme='durant'
+"let g:airline#extensions#tabline#enabled = 1
+"let g:airline#extensions#tabline#left_sep = ' '
+"let g:airline#extensions#tabline#left_alt_sep = '|'
 
 " Nerdtree options
 let NERDTreeMinimalUI = 1
@@ -122,8 +133,6 @@ let python_highlight_all=1
 " ROS launch files
 au BufReadPost *.launch set syntax=xml
 
-" Trigger a highlight in the appropriate direction when pressing these keys:
-let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 
 " change colorscheme
 if filereadable( expand("$HOME/.vim/bundle/molokai/colors/molokai.vim") )
