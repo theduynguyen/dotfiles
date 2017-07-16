@@ -1,48 +1,32 @@
-" Install plugins
-set nocompatible              " required
-filetype off                  " required
+call plug#begin('~/.vim/plugged')
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+Plug 'tmhedberg/SimpylFold'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'bling/vim-bufferline'
+Plug 'scrooloose/nerdtree'
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all'  }
+Plug 'junegunn/fzf.vim'
+Plug 'tomasr/molokai'
+Plug 'jeffkreeftmeijer/vim-numbertoggle'
+Plug 'jreybert/vimagit'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+Plug 'tpope/vim-surround'
+Plug 'ervandew/supertab'
+Plug 'jiangmiao/auto-pairs'
 
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
+"Plug 'scrooloose/syntastic'
+Plug 'vim-scripts/indentpython.vim'
+Plug 'nvie/vim-flake8'
+Plug 'davidhalter/jedi-vim'
+Plug 'cjrh/vim-conda'
 
-" Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
-"Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-Plugin 'tmhedberg/SimpylFold'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'bling/vim-bufferline'
-Plugin 'scrooloose/nerdtree'
-Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'kien/ctrlp.vim'
-Plugin 'tomasr/molokai'
-Plugin 'jeffkreeftmeijer/vim-numbertoggle'
-Plugin 'jreybert/vimagit'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-
-Plugin 'tpope/vim-surround'
-Plugin 'ervandew/supertab'
-Plugin 'jiangmiao/auto-pairs'
-
-"Plugin 'scrooloose/syntastic'
-Plugin 'vim-scripts/indentpython.vim'
-Plugin 'nvie/vim-flake8'
-Plugin 'davidhalter/jedi-vim'
-Plugin 'cjrh/vim-conda'
-
-Plugin 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
-Plugin 'gabrielelana/vim-markdown'
-Plugin 'othree/xml.vim'
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
+Plug 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
+Plug 'gabrielelana/vim-markdown'
+Plug 'othree/xml.vim'
+call plug#end()
 
 " editor settings
 set encoding=utf-8
