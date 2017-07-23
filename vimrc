@@ -8,6 +8,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all'  }
 Plug 'junegunn/fzf.vim'
+nnoremap <silent> <C-p> :FZF ~<CR>
 Plug 'tomasr/molokai'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'jreybert/vimagit'
