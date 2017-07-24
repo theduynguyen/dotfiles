@@ -6,9 +6,17 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'bling/vim-bufferline'
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
+
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all'  }
 Plug 'junegunn/fzf.vim'
 nnoremap <silent> <C-p> :FZF ~<CR>
+
+Plug 'jlanzarotta/bufexplorer'
+" Buffers - explore/next/previous: Alt-F12, F12, Shift-F12.
+nnoremap <silent> <M-F12> :BufExplorer<CR>
+nnoremap <silent> <F12> :bn<CR>
+nnoremap <silent> <S-F12> :bp<CR>
+
 Plug 'tomasr/molokai'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'jreybert/vimagit'
