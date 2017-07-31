@@ -10,6 +10,8 @@ Plug 'jistr/vim-nerdtree-tabs'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all'  }
 Plug 'junegunn/fzf.vim'
 nnoremap <silent> <C-p> :FZF ~<CR>
+nnoremap <silent> <M-p> :Buffers<cr>
+nnoremap <silent> <C-S-p> :Ag<cr>
 
 Plug 'tomasr/molokai'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
