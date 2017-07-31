@@ -117,7 +117,7 @@ set pastetoggle=<F2>
 
 " File type specific settings
 " Python
-au BufNewFile,BufRead *.py set tabstop=4 softtabstop=4 shiftwidth=4 textwidth=79 expandtab autoindent fileformat=unix
+au BufNewFile,BufRead *.py set tabstop=4 softtabstop=4 shiftwidth=4 textwidth=0 expandtab autoindent fileformat=unix
 autocmd FileType py autocmd BufWritePre <buffer> %s/\s\+$//e
 let python_highlight_all=1
 
