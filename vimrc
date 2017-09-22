@@ -6,12 +6,12 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'bling/vim-bufferline'
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
+Plug 'tpope/vim-fugitive'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all'  }
 Plug 'junegunn/fzf.vim'
 nnoremap <silent> <C-p> :FZF ~<CR>
-nnoremap <silent> <M-p> :Buffers<cr>
-nnoremap <silent> <C-S-p> :Ag<cr>
+nnoremap <silent> <C-B> :Buffers <CR>
 
 Plug 'tomasr/molokai'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
@@ -74,6 +74,12 @@ let g:airline_theme='durant'
 "let g:airline#extensions#tabline#enabled = 1
 "let g:airline#extensions#tabline#left_sep = ' '
 "let g:airline#extensions#tabline#left_alt_sep = '|'
+" Show just the filename
+let g:airline#extensions#tabline#fnamemod = ':t'
+" Use patched fonts
+let g:airline_powerline_fonts = 1"
+let g:airline#extensions#tabline#show_buffers = 0
+let g:airline_section_z = airline#section#create(['windowswap', '%3p%% ', 'linenr', ':%3v'])
 
 " Nerdtree options
 let NERDTreeMinimalUI = 1
