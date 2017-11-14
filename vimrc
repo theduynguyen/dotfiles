@@ -21,16 +21,19 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tpope/vim-surround'
 Plug 'ervandew/supertab'
 Plug 'jiangmiao/auto-pairs'
+Plug 'terryma/vim-multiple-cursors'
 
 "Plug 'scrooloose/syntastic'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'nvie/vim-flake8'
 Plug 'davidhalter/jedi-vim'
 Plug 'cjrh/vim-conda'
+Plug 'w0rp/ale'
 
 Plug 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
 Plug 'gabrielelana/vim-markdown'
 Plug 'othree/xml.vim'
+Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
 
 " editor settings
