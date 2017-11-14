@@ -10,9 +10,6 @@ Plug 'christoomey/vim-tmux-navigator'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all'  }
 Plug 'junegunn/fzf.vim'
-nnoremap <silent> <C-p> :FZF ~<CR>
-nnoremap <silent> <M-p> :Buffers<cr>
-nnoremap <silent> <C-S-p> :Ag<cr>
 
 Plug 'tomasr/molokai'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
@@ -95,12 +92,19 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 nmap OO O<Esc>
 nmap oo o<Esc>
+"
 " move vertically by visual line
 nnoremap j gj
 nnoremap k gk
+
 map <F9> :bprevious<CR>
 map <F10> :bnext<CR>
 
+" FZF buttons
+nnoremap <silent> <C-p> :FZF ~<CR>
+nnoremap <silent> <Leader>b :Buffers<cr>
+nnoremap <silent> <Leader>a :Ag<cr>
+"
 "unhighlight search
 nnoremap <esc><esc> :noh<return>
 
