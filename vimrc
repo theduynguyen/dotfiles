@@ -105,7 +105,7 @@ map <F10> :bnext<CR>
 nnoremap <esc><esc> :noh<return>
 
 "Folding shortcut
-nnoremap ya za
+nnoremap <Leader><Space>  za
 
 "show Nerdtree
 nnoremap <Leader>f :NERDTreeToggle<Enter>
