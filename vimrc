@@ -21,7 +21,6 @@ Plug 'ervandew/supertab'
 Plug 'jiangmiao/auto-pairs'
 Plug 'terryma/vim-multiple-cursors'
 
-"Plug 'scrooloose/syntastic'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'nvie/vim-flake8'
 Plug 'davidhalter/jedi-vim'
@@ -84,7 +83,7 @@ let NERDTreeAutoDeleteBuffer = 1
 " key mappings
 "Leader key
 let mapleader=","
-imap jk <Esc> 
+imap jk <Esc>
 
 " motions
 nnoremap <C-K> <C-W><C-K>
@@ -109,7 +108,7 @@ nnoremap <silent> <Leader>a :Ag<cr>
 nnoremap <esc><esc> :noh<return>
 
 "Folding shortcut
-nnoremap <Leader><Space>  za
+nnoremap <Space>  za
 
 "show Nerdtree
 nnoremap <Leader>f :NERDTreeToggle<Enter>
