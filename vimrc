@@ -25,12 +25,11 @@ Plug 'vim-scripts/indentpython.vim'
 Plug 'nvie/vim-flake8'
 Plug 'davidhalter/jedi-vim'
 Plug 'cjrh/vim-conda'
-Plug 'w0rp/ale'
+"Plug 'w0rp/ale'
 
 Plug 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
-Plug 'gabrielelana/vim-markdown'
 Plug 'othree/xml.vim'
-Plug 'christoomey/vim-tmux-navigator'
+Plug 'shime/vim-livedown'
 call plug#end()
 
 " editor settings
@@ -41,7 +40,7 @@ set nu
 set cursorline
 
 " use same clipboard as other programs
-set clipboard+=unnamed
+set clipboard=unnamed
 
 " highlight search
 set hlsearch
@@ -124,7 +123,7 @@ set pastetoggle=<F2>
 
 " File type specific settings
 " Python
-au BufNewFile,BufRead *.py set tabstop=4 softtabstop=4 shiftwidth=4 textwidth=79 expandtab autoindent fileformat=unix
+au BufNewFile,BufRead *.py set tabstop=4 softtabstop=4 cc=80 shiftwidth=4 expandtab autoindent fileformat=unix
 autocmd FileType py autocmd BufWritePre <buffer> %s/\s\+$//e
 let python_highlight_all=1
 
