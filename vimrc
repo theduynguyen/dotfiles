@@ -7,12 +7,14 @@ Plug 'bling/vim-bufferline'
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'majutsushi/tagbar'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all'  }
 Plug 'junegunn/fzf.vim'
 
 Plug 'tomasr/molokai'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
+Plug 'Yggdroot/indentLine'
 Plug 'jreybert/vimagit'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
@@ -25,7 +27,7 @@ Plug 'vim-scripts/indentpython.vim'
 Plug 'nvie/vim-flake8'
 Plug 'davidhalter/jedi-vim'
 Plug 'cjrh/vim-conda'
-"Plug 'w0rp/ale'
+Plug 'w0rp/ale'
 
 Plug 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
 Plug 'othree/xml.vim'
@@ -78,6 +80,9 @@ let g:airline_theme='durant'
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 let NERDTreeAutoDeleteBuffer = 1
+
+" Tagbar
+nmap <F8> :TagbarToggle<CR>
 
 " key mappings
 "Leader key
