@@ -1,5 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
+" GUI
 Plug 'tmhedberg/SimpylFold'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -8,28 +9,35 @@ Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'majutsushi/tagbar'
+Plug 'tomasr/molokai'
 
+" Finding
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all'  }
 Plug 'junegunn/fzf.vim'
 
-Plug 'tomasr/molokai'
+" Editing
+Plug 'SirVer/ultisnips'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'Yggdroot/indentLine'
-Plug 'jreybert/vimagit'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-
 Plug 'tpope/vim-surround'
 Plug 'ervandew/supertab'
 Plug 'jiangmiao/auto-pairs'
 Plug 'terryma/vim-multiple-cursors'
-
-Plug 'vim-scripts/indentpython.vim'
-Plug 'nvie/vim-flake8'
-Plug 'davidhalter/jedi-vim'
-Plug 'cjrh/vim-conda'
 Plug 'maralla/completor.vim'
 Plug 'w0rp/ale'
+Plug 'justinmk/vim-sneak'
+Plug 'tpope/vim-commentary'
 
+" Git
+Plug 'jreybert/vimagit'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+
+" Language support
+Plug 'cjrh/vim-conda'
+Plug 'nvie/vim-flake8'
+Plug 'honza/vim-snippets'
+Plug 'vim-scripts/indentpython.vim'
+Plug 'davidhalter/jedi-vim'
 Plug 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
 Plug 'othree/xml.vim'
 Plug 'shime/vim-livedown'
@@ -81,11 +89,16 @@ let g:airline_theme='durant'
 "let g:airline#extensions#tabline#left_sep = ' '
 "let g:airline#extensions#tabline#left_alt_sep = '|'
 
-" Nerdtree options
+" Nerdtree
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 let NERDTreeAutoDeleteBuffer = 1
 
+" Ultisnips
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+"
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
 
