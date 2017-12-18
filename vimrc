@@ -27,6 +27,7 @@ Plug 'vim-scripts/indentpython.vim'
 Plug 'nvie/vim-flake8'
 Plug 'davidhalter/jedi-vim'
 Plug 'cjrh/vim-conda'
+Plug 'maralla/completor.vim'
 Plug 'w0rp/ale'
 
 Plug 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
@@ -69,6 +70,10 @@ set wildmenu
 set autoindent
 set smartindent
 
+" Jedi 
+let g:jedi#completions_enabled = 0
+let g:jedi#show_call_signatures = "2"
+"
 " Airline - Always show statusline
 set laststatus=2
 let g:airline_theme='durant'
@@ -107,7 +112,8 @@ map <F10> :bnext<CR>
 nnoremap <silent> <C-p> :FZF ~<CR>
 nnoremap <silent> <Leader>b :Buffers<cr>
 nnoremap <silent> <Leader>a :Ag<cr>
-"
+nnoremap <silent> <Leader>t :Tags<cr>
+
 "unhighlight search
 nnoremap <esc><esc> :noh<return>
 
