@@ -10,6 +10,7 @@ Plug 'jistr/vim-nerdtree-tabs'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'majutsushi/tagbar'
 Plug 'tomasr/molokai'
+Plug 'Yggdroot/indentLine'
 
 " Finding
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all'  }
@@ -150,6 +151,10 @@ set pastetoggle=<F2>
 au BufNewFile,BufRead *.py set tabstop=4 softtabstop=4 cc=80 shiftwidth=4 expandtab autoindent fileformat=unix
 autocmd FileType py autocmd BufWritePre <buffer> %s/\s\+$//e
 let python_highlight_all=1
+
+" HTML/JS
+au BufNewFile,BufRead *.html set tabstop=4 softtabstop=4 shiftwidth=4 expandtab autoindent fileformat=unix
+au BufNewFile,BufRead *.js set tabstop=4 softtabstop=4 shiftwidth=4 expandtab autoindent fileformat=unix
 
 " ROS launch files
 au BufReadPost *.launch set syntax=xml
