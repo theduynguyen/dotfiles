@@ -11,6 +11,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'majutsushi/tagbar'
 Plug 'tomasr/molokai'
 Plug 'Yggdroot/indentLine'
+Plug 'altercation/vim-colors-solarized'
 
 " Finding
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all'  }
@@ -21,7 +22,7 @@ Plug 'SirVer/ultisnips'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'Yggdroot/indentLine'
 Plug 'tpope/vim-surround'
-Plug 'ervandew/supertab'
+"Plug 'ervandew/supertab'
 Plug 'jiangmiao/auto-pairs'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'maralla/completor.vim'
@@ -71,7 +72,6 @@ set wrapmargin=0
 
 " do not annoy me
 set completeopt=menu
-let g:jedi#show_call_signatures = "2"
 set cmdheight=2
 set backspace=indent,eol,start
 set wildmode=longest,list,full
@@ -85,7 +85,8 @@ let g:jedi#show_call_signatures = "2"
 "
 " Airline - Always show statusline
 set laststatus=2
-let g:airline_theme='durant'
+let g:airline_theme='solarized'
+let g:airline_solarized_bg='dark'"
 "let g:airline#extensions#tabline#enabled = 1
 "let g:airline#extensions#tabline#left_sep = ' '
 "let g:airline#extensions#tabline#left_alt_sep = '|'
@@ -99,7 +100,13 @@ let NERDTreeAutoDeleteBuffer = 1
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-"
+
+"Completor
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<cr>"
+let g:completor_node_binary = '/usr/local/bin'
+
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
 
@@ -161,7 +168,9 @@ au BufReadPost *.launch set syntax=xml
 
 
 " change colorscheme
-if filereadable( expand("$HOME/.vim/bundle/molokai/colors/molokai.vim") )
-    colorscheme molokai
-endif
-
+" if filereadable( expand("$HOME/.vim/bundle/molokai/colors/molokai.vim") )
+"     colorscheme molokai
+" endif
+syntax enable
+set background=dark
+colorscheme solarized
