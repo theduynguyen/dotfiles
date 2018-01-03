@@ -9,9 +9,11 @@ Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'majutsushi/tagbar'
-Plug 'tomasr/molokai'
 Plug 'Yggdroot/indentLine'
-Plug 'altercation/vim-colors-solarized'
+
+" Color schemes
+Plug 'tomasr/molokai'
+Plug 'jnurmine/Zenburn'
 
 " Finding
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all'  }
@@ -22,7 +24,6 @@ Plug 'SirVer/ultisnips'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'Yggdroot/indentLine'
 Plug 'tpope/vim-surround'
-"Plug 'ervandew/supertab'
 Plug 'jiangmiao/auto-pairs'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'maralla/completor.vim'
@@ -85,8 +86,7 @@ let g:jedi#show_call_signatures = "2"
 "
 " Airline - Always show statusline
 set laststatus=2
-let g:airline_theme='solarized'
-let g:airline_solarized_bg='dark'"
+let g:airline_theme='zenburn'
 "let g:airline#extensions#tabline#enabled = 1
 "let g:airline#extensions#tabline#left_sep = ' '
 "let g:airline#extensions#tabline#left_alt_sep = '|'
@@ -147,7 +147,6 @@ nnoremap <Leader>f :NERDTreeToggle<Enter>
 "find in Nerdtree
 nnoremap <silent> <Leader>v :NERDTreeFind<CR>
 
-
 inoremap # X#
 
 " toggle mode before pasting from external sources
@@ -171,6 +170,8 @@ au BufReadPost *.launch set syntax=xml
 " if filereadable( expand("$HOME/.vim/bundle/molokai/colors/molokai.vim") )
 "     colorscheme molokai
 " endif
-syntax enable
-set background=dark
-colorscheme solarized
+
+try
+colors zenburn
+catch
+endtry
