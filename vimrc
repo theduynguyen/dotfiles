@@ -34,6 +34,7 @@ Plug 'tpope/vim-commentary'
 " Git
 Plug 'jreybert/vimagit'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'tpope/vim-fugitive' 
 
 " Language support
 Plug 'cjrh/vim-conda'
