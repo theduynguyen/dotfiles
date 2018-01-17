@@ -35,6 +35,7 @@ Plug 'tpope/vim-commentary'
 Plug 'jreybert/vimagit'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tpope/vim-fugitive' 
+Plug 'airblade/vim-gitgutter'
 
 " Language support
 Plug 'cjrh/vim-conda'
@@ -135,6 +136,8 @@ nnoremap <silent> <C-p> :FZF ~<CR>
 nnoremap <silent> <Leader>b :Buffers<cr>
 nnoremap <silent> <Leader>a :Ag<cr>
 nnoremap <silent> <Leader>t :Tags<cr>
+
+" Magit
 
 "unhighlight search
 nnoremap <esc><esc> :noh<return>
