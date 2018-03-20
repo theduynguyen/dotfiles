@@ -31,6 +31,7 @@ Plug 'maralla/completor.vim'
 Plug 'w0rp/ale'
 Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-commentary'
+Plug 'apalmer1377/factorus'
 
 " Git
 Plug 'jreybert/vimagit'
@@ -160,7 +161,7 @@ set pastetoggle=<F2>
 " File type specific settings
 " Python
 au BufNewFile,BufRead *.py set tabstop=4 softtabstop=4 cc=80 shiftwidth=4 expandtab autoindent fileformat=unix
-autocmd FileType py autocmd BufWritePre <buffer> %s/\s\+$//e
+autocmd FileType *.py autocmd BufWritePre <buffer> %s/\s\+$//e
 let python_highlight_all=1
 
 " HTML/JS
