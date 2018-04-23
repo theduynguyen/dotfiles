@@ -47,6 +47,8 @@ Plug 'davidhalter/jedi-vim'
 Plug 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
 Plug 'othree/xml.vim'
 Plug 'shime/vim-livedown'
+Plug 'mattn/emmet-vim'
+Plug 'skammer/vim-css-color'
 call plug#end()
 
 " editor settings
