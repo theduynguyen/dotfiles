@@ -40,7 +40,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
 " Language support
-Plug 'cjrh/vim-conda'
 Plug 'nvie/vim-flake8'
 Plug 'honza/vim-snippets'
 Plug 'vim-scripts/indentpython.vim'
