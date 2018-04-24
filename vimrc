@@ -166,7 +166,7 @@ autocmd FileType *.py autocmd BufWritePre <buffer> %s/\s\+$//e
 let python_highlight_all=1
 
 " HTML/JS
-au BufNewFile,BufRead *.html set tabstop=4 softtabstop=4 shiftwidth=4 expandtab autoindent fileformat=unix
+au BufNewFile,BufRead *.html set tabstop=2 softtabstop=2 shiftwidth=2 expandtab autoindent fileformat=unix
 au BufNewFile,BufRead *.js set tabstop=4 softtabstop=4 shiftwidth=4 expandtab autoindent fileformat=unix
 
 " ROS launch files
