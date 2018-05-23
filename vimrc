@@ -170,7 +170,7 @@ au BufNewFile,BufRead *.html set tabstop=2 softtabstop=2 shiftwidth=2 expandtab 
 au BufNewFile,BufRead *.js set tabstop=4 softtabstop=4 shiftwidth=4 expandtab autoindent fileformat=unix
 
 " ROS launch files
-au BufReadPost *.launch set syntax=xml
+au BufReadPost *.launch set syntax=html
 
 
 " change colorscheme
