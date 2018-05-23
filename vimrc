@@ -85,6 +85,13 @@ set wildmenu
 set autoindent
 set smartindent
 
+" ALE
+let g:ale_fixers = {
+\   'javascript': ['eslint'],
+\   'python': ['yapf', 'remove_trailing_lines', 'trim_whitespace'],
+\}
+let g:ale_fix_on_save = 1
+
 " Jedi 
 let g:jedi#completions_enabled = 0
 let g:jedi#show_call_signatures = "2"
