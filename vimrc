@@ -19,9 +19,9 @@ Plug 'jnurmine/Zenburn'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all'  }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-abolish'
-
+"
 " Editing
-Plug 'SirVer/ultisnips'
+" Plug 'SirVer/ultisnips'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'Yggdroot/indentLine'
 Plug 'tpope/vim-surround'
@@ -29,9 +29,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'maralla/completor.vim'
 Plug 'w0rp/ale'
-Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-commentary'
-Plug 'apalmer1377/factorus'
+Plug 'easymotion/vim-easymotion'
 
 " Git
 Plug 'jreybert/vimagit'
@@ -49,6 +48,7 @@ Plug 'othree/xml.vim'
 Plug 'shime/vim-livedown'
 Plug 'mattn/emmet-vim'
 Plug 'skammer/vim-css-color'
+
 call plug#end()
 
 " editor settings
@@ -84,6 +84,7 @@ set wildmode=longest,list,full
 set wildmenu
 set autoindent
 set smartindent
+set conceallevel=0
 
 " ALE
 let g:ale_fixers = {
@@ -91,6 +92,10 @@ let g:ale_fixers = {
 \   'python': ['yapf', 'remove_trailing_lines', 'trim_whitespace'],
 \}
 let g:ale_fix_on_save = 1
+
+" Easymotion
+nmap f <Plug>(easymotion-overwin-f)
+nmap s <Plug>(easymotion-overwin-f2)
 
 " Jedi 
 let g:jedi#completions_enabled = 0
@@ -109,9 +114,9 @@ let NERDTreeDirArrows = 1
 let NERDTreeAutoDeleteBuffer = 1
 
 " Ultisnips
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+" let g:UltiSnipsExpandTrigger="<tab>"
+" let g:UltiSnipsJumpForwardTrigger="<c-b>"
+" let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 "Completor
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
@@ -127,6 +132,7 @@ nmap <F8> :TagbarToggle<CR>
 let mapleader=","
 imap jk <Esc>
 
+
 " motions
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
@@ -138,13 +144,16 @@ nmap oo o<Esc>
 nnoremap j gj
 nnoremap k gk
 
+" buffers 
 map <F9> :bprevious<CR>
 map <F10> :bnext<CR>
 
 " FZF buttons
-nnoremap <silent> <C-p> :FZF ~<CR>
+command! -bang -nargs=* Rg call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, <bang>0)
+
+nnoremap <silent> <C-t> :FZF ~<CR>
 nnoremap <silent> <Leader>b :Buffers<cr>
-nnoremap <silent> <Leader>a :Ag<cr>
+nnoremap <silent> <Leader>a :Rg<cr>
 nnoremap <silent> <Leader>t :Tags<cr>
 
 " Magit
