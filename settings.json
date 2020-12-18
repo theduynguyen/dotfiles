@@ -1,0 +1,78 @@
+{
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "workbench.sideBar.location": "right",
+  "python.showStartPage": false,
+  "editor.smoothScrolling": true,
+  "window.zoomLevel": -1,
+  "workbench.colorTheme": "Tokyo Night Storm",
+  "files.associations": {
+    "*.env": "shellscript",
+    "*.launch": "xml"
+  },
+  "explorer.confirmDelete": false,
+  "editor.fontFamily": "'Lilex', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.fontLigatures": true,
+  "workbench.iconTheme": "helium-icon-theme",
+  "editor.semanticHighlighting.enabled": true,
+  "git.confirmSync": false,
+  "files.insertFinalNewline": true,
+  "cmake.configureOnOpen": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "numso.prettier-standard-vscode"
+  },
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.foldfix": true,
+  "vim.autoindent": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["o", "o"],
+      "after": ["o", "<Esc>", "k"]
+    },
+    {
+      "before": ["O", "O"],
+      "after": ["O", "<Esc>", "j"]
+    },
+    {
+      "before": ["<Space>"],
+      "commands": ["editor.toggleFold"]
+    },
+    {
+      "before": ["<Leader>","<Leader>","w"],
+      "after": ["<Leader>","<Leader>","<Leader>","b","d","w"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["J"],
+      "after": ["2", "0", "j"]
+    },
+    {
+      "before": ["K"],
+      "after": ["2", "0", "k"]
+    },
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["g", "c"],
+      "commands": ["editor.action.commentLine"],
+      "when": "editorTextFocus && !editorReadonly"
+    }
+  ],
+  "vim.leader": ",",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  "vim.smartRelativeLine": true
+}
