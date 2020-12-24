@@ -1,26 +1,42 @@
 {
-  "telemetry.enableCrashReporter": false,
-  "telemetry.enableTelemetry": false,
-  "workbench.sideBar.location": "right",
-  "python.showStartPage": false,
-  "editor.smoothScrolling": true,
-  "window.zoomLevel": -1,
-  "workbench.colorTheme": "Tokyo Night Storm",
-  "files.associations": {
-    "*.env": "shellscript",
-    "*.launch": "xml"
-  },
-  "explorer.confirmDelete": false,
-  "editor.fontFamily": "'Lilex', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-  "editor.fontLigatures": true,
-  "workbench.iconTheme": "helium-icon-theme",
-  "editor.semanticHighlighting.enabled": true,
-  "git.confirmSync": false,
+  "vim.disableAnnoyingNeovimMessage": true,
+  "python.jediEnabled": false,
+  "cmake.configureOnOpen": true,
+  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4 }",
+  "workbench.colorTheme": "Atom One Dark",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "editor.formatOnSave": true,
   "files.insertFinalNewline": true,
-  "cmake.configureOnOpen": false,
-  "[jsonc]": {
+  "editor.formatOnType": true,
+  "workbench.editor.scrollToSwitchTabs": true,
+  "[javascript]": {
     "editor.defaultFormatter": "numso.prettier-standard-vscode"
   },
+  "explorer.confirmDragAndDrop": false,
+  "cmake.revealLog": "focus",
+  "cmake.installPrefix": "${workspaceFolder}/build/install",
+  "cmake.generator": "Ninja",
+  "cmake.preferredGenerators": ["Ninja", "Unix Makefiles"],
+  "cmake.configureSettings": {
+    "VCPKG_TARGET_TRIPLET": "x64-osx",
+    "CMAKE_TOOLCHAIN_FILE": "/Users/tdnguyen/SW/vcpkg/scripts/buildsystems/vcpkg.cmake"
+  },
+  "prettier.semi": false,
+  "workbench.sideBar.location": "right",
+  "editor.minimap.enabled": false,
+  "files.associations": {
+    "*.env": "shellscript"
+  },
+  "diffEditor.ignoreTrimWhitespace": true,
+  "csv-preview.separator": ";",
+  "python.showStartPage": false,
+  "git.confirmSync": false,
+  "explorer.autoReveal": "focusNoScroll",
+  "window.zoomLevel": 0,
+  "workbench.startupEditor": "newUntitledFile",
+  "python.languageServer": "Pylance",
+  "auto-close-tag.SublimeText3Mode": true,
   "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.foldfix": true,
@@ -50,6 +66,10 @@
     {
       "before": ["<Leader>","<Leader>","w"],
       "after": ["<Leader>","<Leader>","<Leader>","b","d","w"]
+    },
+    {
+      "before": ["<Leader>","<Leader>","e"],
+      "after": ["<Leader>","<Leader>","<Leader>","b","d","e"]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
@@ -74,5 +94,6 @@
     "<C-a>": false,
     "<C-f>": false
   },
-  "vim.smartRelativeLine": true
+  "vim.smartRelativeLine": true,
+  "editor.formatOnPaste": true
 }
