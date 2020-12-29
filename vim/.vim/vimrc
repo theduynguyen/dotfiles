@@ -1,0 +1,33 @@
+" Autoinstall vim-plug
+" ----------------------------------------------------------------------------
+if empty(glob('~/.nvim/autoload/plug.vim'))
+  silent !curl -fLo ~/.nvim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall
+endif
+" ----------------------------------------------------------------------------
+
+call plug#begin('~/.vim/plugged')
+
+" Editor
+runtime plugin/editor.vim
+
+" Completion
+runtime plugin/coc.vim
+
+" Fuzzy find
+runtime plugin/fzf.vim
+
+" Git
+runtime plugin/git.vim
+
+" GUI
+runtime plugin/color.vim
+runtime plugin/ui.vim
+
+call plug#end()
+
+runtime editor.vim
+runtime keymapping.vim
+
+colorscheme onedark
