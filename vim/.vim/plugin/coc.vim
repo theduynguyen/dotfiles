@@ -1,10 +1,12 @@
 Plug 'neoclide/coc.nvim'
+Plug 'jackguo380/vim-lsp-cxx-highlight'
 
 let g:coc_config_home="$HOME/.vim/"
 let g:coc_global_extensions = ['coc-json', 
 												     \ 'coc-yaml', 
 												     \ 'coc-git', 
 												     \ 'coc-pyright', 
+												     \ 'coc-clangd', 
 												     \ 'coc-tsserver', 
 												     \ 'coc-prettier', 
 												     \ 'coc-vimlsp', 
