@@ -5,6 +5,8 @@ Plug 'Yggdroot/indentLine'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'sheerun/vim-polyglot'
 Plug 'Konfekt/FastFold'
+Plug 'tmhedberg/SimpylFold'
+Plug 'machakann/vim-highlightedyank'
 
 Plug 'easymotion/vim-easymotion'
 map  <Leader><Leader>w <Plug>(easymotion-bd-w)
