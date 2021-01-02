@@ -20,6 +20,8 @@ let g:ale_linters = {
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \   'javascript': ['eslint','prettier'],
+\   'scss': ['prettier'],
+\   'html': ['prettier'],
 \   'python': ['yapf'],
 \   'yaml': ['prettier'],
 \   'json': ['prettier'],
