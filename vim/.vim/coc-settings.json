@@ -1,6 +1,11 @@
 {
     "coc.preferences.formatOnSaveFiletypes": ["css", "javascript", "python", "cpp", "yaml"],
+    "diagnostic-languageserver.filetypes": {
+                    "python": "flake8"
+    },
+    "diagnostic-languageserver.formatFiletypes": {
+        "python": ["yapf", "isort"]
+    },
     "diagnostic.checkCurrentLine": true,
-    "python.formatting.provider": "yapf",
     "clangd.semanticHighlighting": true
 }

@@ -12,8 +12,9 @@ call plug#begin('~/.vim/plugged')
 " Editor
 runtime plugin/editor.vim
 
-" Completion
+" Language support
 runtime plugin/coc.vim
+runtime plugin/language.vim
 
 " Fuzzy find
 runtime plugin/fzf.vim
