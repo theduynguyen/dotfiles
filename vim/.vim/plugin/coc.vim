@@ -8,6 +8,7 @@ let g:coc_global_extensions = ['coc-json',
 												     \ 'coc-jedi',
 												     \ 'coc-clangd',
 												     \ 'coc-tsserver',
+												     \ 'coc-explorer',
 												     \ 'coc-prettier',
 												     \ 'coc-vimlsp',
 												     \ 'coc-docker',
@@ -169,3 +170,5 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+nmap <leader>e :CocCommand explorer<CR>
