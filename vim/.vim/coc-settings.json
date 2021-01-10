@@ -4,13 +4,15 @@
     "javascript",
     "python",
     "cpp",
+    "rust",
     "yaml"
   ],
   "diagnostic-languageserver.filetypes": {
     "python": "flake8"
   },
   "diagnostic-languageserver.formatFiletypes": {
-    "python": ["yapf", "isort"]
+    "python": ["yapf", "isort"],
+    "rust": ["rustfmt"]
   },
   "diagnostic.checkCurrentLine": true,
   "clangd.semanticHighlighting": true,
