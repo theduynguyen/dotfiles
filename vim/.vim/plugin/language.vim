@@ -15,6 +15,7 @@ let g:ale_lint_on_save = 1
 let g:ale_linters = {
 \   'javascript': ['eslint'],
 \   'python': ['flake8'],
+\   'rust': ['rust-analyzer'],
 \}
 
 let g:ale_fixers = {
@@ -25,6 +26,7 @@ let g:ale_fixers = {
 \   'python': ['yapf'],
 \   'yaml': ['prettier'],
 \   'json': ['prettier'],
+\   'rust': ['rustfmt'],
 \}
 let g:ale_fix_on_save = 1
 let g_ale_sign_column_always = 1
