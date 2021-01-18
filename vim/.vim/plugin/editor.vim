@@ -12,7 +12,7 @@ Plug 'tmhedberg/SimpylFold'
 Plug 'machakann/vim-highlightedyank'
 
 Plug 'easymotion/vim-easymotion'
-map  <Leader><Leader>w <Plug>(easymotion-bd-w)
-nmap <Leader><Leader>w <Plug>(easymotion-overwin-w)
-map  <Leader><Leader>e <Plug>(easymotion-bd-e)
-nmap <Leader><Leader>e <Plug>(easymotion-overwin-e)
+" map  <Leader><Leader>w <Plug>(easymotion-bd-w)
+" nmap <Leader><Leader>w <Plug>(easymotion-overwin-w)
+" map  <Leader><Leader>e <Plug>(easymotion-bd-e)
+" nmap <Leader><Leader>e <Plug>(easymotion-overwin-e)
