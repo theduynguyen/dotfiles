@@ -12,7 +12,10 @@ Plug 'tmhedberg/SimpylFold'
 Plug 'machakann/vim-highlightedyank'
 
 Plug 'easymotion/vim-easymotion'
-" map  <Leader><Leader>w <Plug>(easymotion-bd-w)
-" nmap <Leader><Leader>w <Plug>(easymotion-overwin-w)
-" map  <Leader><Leader>e <Plug>(easymotion-bd-e)
-" nmap <Leader><Leader>e <Plug>(easymotion-overwin-e)
+" " Jump to anywhere you want with minimal keystrokes, with just one key binding.
+" " `s{char}{label}`
+" nmap s <Plug>(easymotion-overwin-f)
+" or
+" `s{char}{char}{label}`
+" Need one more keystroke, but on average, it may be more comfortable.
+nmap s <Plug>(easymotion-overwin-f2)
