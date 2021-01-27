@@ -13,5 +13,5 @@ endfunction
 command! -nargs=* -bang RG call RipgrepFzf(<q-args>, <bang>0)
 nnoremap  <C-p> :Files .<CR>
 nnoremap  <Leader>b :Buffers<cr>
-nnoremap  <Leader>a :Rg<cr>
+nnoremap  <Leader>a :RG<cr>
 nnoremap  <Leader>t :Tags<cr>
