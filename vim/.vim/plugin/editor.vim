@@ -1,6 +1,9 @@
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
+
 Plug 'jiangmiao/auto-pairs'
+let g:AutoPairsFlyMode=1
+
 Plug 'Yggdroot/indentLine'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 
