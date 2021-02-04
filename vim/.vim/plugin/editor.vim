@@ -27,3 +27,8 @@ nmap s <Plug>(easymotion-overwin-f)
 let g:EasyMotion_smartcase = 1
 
 let g:conceallevel=0
+
+if &wildoptions =~ "pum"
+    cnoremap <expr> <up> pumvisible() ? "<C-p>" : "\\<up>"
+    cnoremap <expr> <down> pumvisible() ? "<C-n>" : "\\<down>"
+endif
