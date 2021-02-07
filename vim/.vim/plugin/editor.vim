@@ -5,6 +5,8 @@ Plug 'tpope/vim-commentary'
 " let g:AutoPairsFlyMode=1
 
 Plug 'Yggdroot/indentLine'
+let g:indentLine_fileTypeExclude = ['json', 'markdown']
+
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 
 Plug 'sheerun/vim-polyglot'
